@@ -1,0 +1,10 @@
+apply plugin: 'com.android.feature'
+apply from: rootProject.file('module.gradle')
+apply from: rootProject.file('feature-dependencies.gradle')
+
+dependencies {
+  implementation project(':base')
+
+  kapt rootProject.daggerCompiler
+  kapt rootProject.daggerAndroidCompiler
+}

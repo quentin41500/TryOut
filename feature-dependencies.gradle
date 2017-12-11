@@ -1,0 +1,9 @@
+dependencies {
+  implementation rootProject.dagger
+  implementation rootProject.daggerAndroidSupport
+  kapt rootProject.daggerCompiler
+  kapt rootProject.daggerAndroidCompiler
+
+  implementation rootProject.timber
+  implementation rootProject.kotlinStdlib
+}
